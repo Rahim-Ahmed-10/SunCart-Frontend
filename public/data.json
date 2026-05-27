@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15.0,
+    "rating": 4.7,
+    "stock": 120,
+    "description": "Stylish UV400 protection sunglasses perfect for bright summer outings.",
+    "image": "https://i.postimg.cc/example1.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Broad Spectrum SPF 50 Sunscreen",
+    "brand": "SolGuard",
+    "price": 18.5,
+    "rating": 4.9,
+    "stock": 250,
+    "description": "Water-resistant, non-greasy sunscreen lotion with high UV protection.",
+    "image": "https://i.postimg.cc/example2.png",
+    "category": "Skincare"
+  },
+  {
+    "id": 3,
+    "name": "Insulated Stainless Steel Water Bottle",
+    "brand": "HydroChill",
+    "price": 24.99,
+    "rating": 4.8,
+    "stock": 85,
+    "description": "Double-wall vacuum insulated bottle that keeps your drinks ice-cold for 24 hours.",
+    "image": "https://i.postimg.cc/example3.png",
+    "category": "Outdoor Gear"
+  },
+  {
+    "id": 4,
+    "name": "Quick-Dry Microfiber Beach Towel",
+    "brand": "AquaDry",
+    "price": 19.95,
+    "rating": 4.6,
+    "stock": 140,
+    "description": "Ultra-absorbent, sand-free, and compact microfiber towel for the beach or pool.",
+    "image": "https://i.postimg.cc/example4.png",
+    "category": "Beach Gear"
+  },
+  {
+    "id": 5,
+    "name": "Portable Handheld Misting Fan",
+    "brand": "BreezeMax",
+    "price": 12.99,
+    "rating": 4.4,
+    "stock": 200,
+    "description": "Battery-operated pocket fan with a built-in water mister for instant cooling.",
+    "image": "https://i.postimg.cc/example5.png",
+    "category": "Electronics"
+  },
+  {
+    "id": 6,
+    "name": "Foldable Wide-Brim Straw Hat",
+    "brand": "SombreroCo",
+    "price": 22.0,
+    "rating": 4.5,
+    "stock": 65,
+    "description": "Elegant and breathable straw sun hat with an adjustable chin strap.",
+    "image": "https://i.postimg.cc/example6.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 7,
+    "name": "Heavy-Duty Leakproof Cooler Bag",
+    "brand": "ArcticPack",
+    "price": 45.0,
+    "rating": 4.7,
+    "stock": 40,
+    "description": "Soft-sided insulated cooler bag holding up to 24 cans, perfect for picnics.",
+    "image": "https://i.postimg.cc/example7.png",
+    "category": "Outdoor Gear"
+  },
+  {
+    "id": 8,
+    "name": "Anti-Mosquito Citronella Candle",
+    "brand": "BugOff",
+    "price": 9.99,
+    "rating": 4.3,
+    "stock": 180,
+    "description": "Natural soy wax candle infused with citronella oil to keep bugs away from your patio.",
+    "image": "https://i.postimg.cc/example8.png",
+    "category": "Home & Patio"
+  },
+  {
+    "id": 9,
+    "name": "Waterproof Clear Phone Pouch",
+    "brand": "DryDock",
+    "price": 8.5,
+    "rating": 4.6,
+    "stock": 300,
+    "description": "Universal waterproof case that protects your phone during swimming, kayaking, or beach trips.",
+    "image": "https://i.postimg.cc/example9.png",
+    "category": "Electronics"
+  },
+  {
+    "id": 10,
+    "name": "Inflatable Luxury Pool Float",
+    "brand": "FloatParadise",
+    "price": 34.99,
+    "rating": 4.8,
+    "stock": 95,
+    "description": "Durable premium PVC lounge pool float with built-in cup holders.",
+    "image": "https://i.postimg.cc/example10.png",
+    "category": "Beach Gear"
+  }
+]
