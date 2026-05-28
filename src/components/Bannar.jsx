@@ -86,7 +86,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative w-full h-[550px] md:h-[650px] lg:h-[750px] bg-gray-900 text-white overflow-hidden">
+    <div className="relative max-w-7xl mx-auto h-[550px] md:h-[650px] lg:h-[750px] bg-gray-900 text-white overflow-hidden">
       <Swiper
         modules={[Autoplay, Navigation, Pagination, EffectFade]}
         effect={'fade'}
