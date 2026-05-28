@@ -1,112 +1,112 @@
 [
-  {
-    "id": 1,
-    "name": "UV Protection Sunglasses",
-    "brand": "SunShade",
-    "price": 15.0,
-    "rating": 4.7,
-    "stock": 120,
-    "description": "Stylish UV400 protection sunglasses perfect for bright summer outings.",
-    "image": "https://i.postimg.cc/example1.png",
-    "category": "Accessories"
-  },
-  {
-    "id": 2,
-    "name": "Broad Spectrum SPF 50 Sunscreen",
-    "brand": "SolGuard",
-    "price": 18.5,
-    "rating": 4.9,
-    "stock": 250,
-    "description": "Water-resistant, non-greasy sunscreen lotion with high UV protection.",
-    "image": "https://i.postimg.cc/example2.png",
-    "category": "Skincare"
-  },
-  {
-    "id": 3,
-    "name": "Insulated Stainless Steel Water Bottle",
-    "brand": "HydroChill",
-    "price": 24.99,
-    "rating": 4.8,
-    "stock": 85,
-    "description": "Double-wall vacuum insulated bottle that keeps your drinks ice-cold for 24 hours.",
-    "image": "https://i.postimg.cc/example3.png",
-    "category": "Outdoor Gear"
-  },
-  {
-    "id": 4,
-    "name": "Quick-Dry Microfiber Beach Towel",
-    "brand": "AquaDry",
-    "price": 19.95,
-    "rating": 4.6,
-    "stock": 140,
-    "description": "Ultra-absorbent, sand-free, and compact microfiber towel for the beach or pool.",
-    "image": "https://i.postimg.cc/example4.png",
-    "category": "Beach Gear"
-  },
-  {
-    "id": 5,
-    "name": "Portable Handheld Misting Fan",
-    "brand": "BreezeMax",
-    "price": 12.99,
-    "rating": 4.4,
-    "stock": 200,
-    "description": "Battery-operated pocket fan with a built-in water mister for instant cooling.",
-    "image": "https://i.postimg.cc/example5.png",
-    "category": "Electronics"
-  },
-  {
-    "id": 6,
-    "name": "Foldable Wide-Brim Straw Hat",
-    "brand": "SombreroCo",
-    "price": 22.0,
-    "rating": 4.5,
-    "stock": 65,
-    "description": "Elegant and breathable straw sun hat with an adjustable chin strap.",
-    "image": "https://i.postimg.cc/example6.png",
-    "category": "Accessories"
-  },
-  {
-    "id": 7,
-    "name": "Heavy-Duty Leakproof Cooler Bag",
-    "brand": "ArcticPack",
-    "price": 45.0,
-    "rating": 4.7,
-    "stock": 40,
-    "description": "Soft-sided insulated cooler bag holding up to 24 cans, perfect for picnics.",
-    "image": "https://i.postimg.cc/example7.png",
-    "category": "Outdoor Gear"
-  },
-  {
-    "id": 8,
-    "name": "Anti-Mosquito Citronella Candle",
-    "brand": "BugOff",
-    "price": 9.99,
-    "rating": 4.3,
-    "stock": 180,
-    "description": "Natural soy wax candle infused with citronella oil to keep bugs away from your patio.",
-    "image": "https://i.postimg.cc/example8.png",
-    "category": "Home & Patio"
-  },
-  {
-    "id": 9,
-    "name": "Waterproof Clear Phone Pouch",
-    "brand": "DryDock",
-    "price": 8.5,
-    "rating": 4.6,
-    "stock": 300,
-    "description": "Universal waterproof case that protects your phone during swimming, kayaking, or beach trips.",
-    "image": "https://i.postimg.cc/example9.png",
-    "category": "Electronics"
-  },
-  {
-    "id": 10,
-    "name": "Inflatable Luxury Pool Float",
-    "brand": "FloatParadise",
-    "price": 34.99,
-    "rating": 4.8,
-    "stock": 95,
-    "description": "Durable premium PVC lounge pool float with built-in cup holders.",
-    "image": "https://i.postimg.cc/example10.png",
-    "category": "Beach Gear"
-  }
+    {
+        "id": 1,
+        "name": "UV Protection Sunglasses",
+        "brand": "SunShade",
+        "price": 15.0,
+        "rating": 4.7,
+        "stock": 10,
+        "description": "Stylish UV protection sunglasses perfect for summer outings.",
+        "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500",
+        "category": "Accessories"
+    },
+    {
+        "id": 2,
+        "name": "Portable Neck Fan",
+        "brand": "CoolBreeze",
+        "price": 24.99,
+        "rating": 4.5,
+        "stock": 45,
+        "description": "Hands-free wearable fan with 3 speeds and long battery life.",
+        "image": "https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?w=500",
+        "category": "Electronics"
+    },
+    {
+        "id": 3,
+        "name": "Waterproof Sunscreen SPF 50",
+        "brand": "GlowGuard",
+        "price": 12.5,
+        "rating": 4.8,
+        "stock": 120,
+        "description": "Broad-spectrum protection that is sweat and water-resistant for 80 minutes.",
+        "image": "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=500",
+        "category": "Skincare"
+    },
+    {
+        "id": 4,
+        "name": "Inflatable Pool Float",
+        "brand": "AquaFun",
+        "price": 35.0,
+        "rating": 4.6,
+        "stock": 25,
+        "description": "Large flamingo-shaped float perfect for pool parties.",
+        "image": "https://images.unsplash.com/photo-1562184560-a11b7cf7c166?w=500",
+        "category": "Outdoor"
+    },
+    {
+        "id": 5,
+        "name": "Quick-Dry Beach Towel",
+        "brand": "SandFree",
+        "price": 19.99,
+        "rating": 4.9,
+        "stock": 60,
+        "description": "Microfiber towel that repels sand and dries in minutes.",
+        "image": "https://images.unsplash.com/photo-1576426863848-c28f0ca9ca68?w=500",
+        "category": "Beachwear"
+    },
+    {
+        "id": 6,
+        "name": "Insulated Cooler Bag",
+        "brand": "ChillMaster",
+        "price": 29.0,
+        "rating": 4.4,
+        "stock": 15,
+        "description": "Leaktight cooler bag that keeps drinks cold for up to 12 hours.",
+        "image": "https://images.unsplash.com/photo-1581553680321-4fffae59fccd?w=500",
+        "category": "Outdoor"
+    },
+    {
+        "id": 7,
+        "name": "Portable Beach Umbrella",
+        "brand": "ShadePro",
+        "price": 42.0,
+        "rating": 4.3,
+        "stock": 8,
+        "description": "7-foot umbrella with tilt mechanism and sand anchor.",
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500",
+        "category": "Outdoor"
+    },
+    {
+        "id": 8,
+        "name": "Waterproof Phone Pouch",
+        "brand": "SealTight",
+        "price": 9.99,
+        "rating": 4.7,
+        "stock": 200,
+        "description": "Universal dry bag for smartphones with touch-responsive screen.",
+        "image": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=500",
+        "category": "Electronics"
+    },
+    {
+        "id": 9,
+        "name": "Men's Board Shorts",
+        "brand": "WaveRider",
+        "price": 22.5,
+        "rating": 4.5,
+        "stock": 55,
+        "description": "Breathable and lightweight shorts with a quick-dry finish.",
+        "image": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=500",
+        "category": "Apparel"
+    },
+    {
+        "id": 10,
+        "name": "Citronella Outdoor Candle",
+        "brand": "BugOff",
+        "price": 8.0,
+        "rating": 4.2,
+        "stock": 85,
+        "description": "Natural citronella candle to keep mosquitoes away from your patio.",
+        "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59?w=500",
+        "category": "Home"
+    }
 ]
