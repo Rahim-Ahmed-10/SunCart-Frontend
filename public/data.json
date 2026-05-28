@@ -32,27 +32,27 @@
         "image": "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=500",
         "category": "Skincare"
     },
-    {
+   {
         "id": 4,
-        "name": "Inflatable Pool Float",
-        "brand": "AquaFun",
-        "price": 35.0,
-        "rating": 4.6,
-        "stock": 25,
-        "description": "Large flamingo-shaped float perfect for pool parties.",
-        "image": "https://images.unsplash.com/photo-1562184560-a11b7cf7c166?w=500",
-        "category": "Outdoor"
+        "name": "Wide Brim Straw Hat",
+        "brand": "SummerVibe",
+        "price": 28.50,
+        "rating": 4.7,
+        "stock": 40,
+        "description": "Handwoven straw hat providing excellent sun coverage and a classic summer look.",
+        "image": "https://images.unsplash.com/photo-1521335629791-ce4aec67dd15?auto=format&fit=crop&w=800&q=80",
+        "category": "Accessories"
     },
     {
         "id": 5,
-        "name": "Quick-Dry Beach Towel",
-        "brand": "SandFree",
-        "price": 19.99,
-        "rating": 4.9,
-        "stock": 60,
-        "description": "Microfiber towel that repels sand and dries in minutes.",
-        "image": "https://images.unsplash.com/photo-1576426863848-c28f0ca9ca68?w=500",
-        "category": "Beachwear"
+        "name": "Waterproof Bluetooth Speaker",
+        "brand": "SonicWave",
+        "price": 45.00,
+        "rating": 4.8,
+        "stock": 35,
+        "description": "Portable, rugged, and waterproof speaker perfect for beach days and pool parties.",
+        "image": "https://images.unsplash.com/photo-1589003077984-894e133dabab?auto=format&fit=crop&w=800&q=80",
+        "category": "Electronics"
     },
     {
         "id": 6,

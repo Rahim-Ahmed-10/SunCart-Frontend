@@ -11,7 +11,17 @@ const TopPopular =async () => {
     return (
         <div className="bg-[#0f172a] text-white min-h-screen">
             <div className="max-w-7xl mx-auto px-6 py-16">
-                
+                {/* Top Brands Section */}
+                 <section className='mb-20'>
+                    <h2 className="text-2xl font-bold text-center text-gray-400 uppercase tracking-[0.3em] mb-10">Top Partners</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 opacity-60">
+                        {['SunShade', 'GlowGuard', 'WaveRider', 'AquaFun'].map((brand, index) => (
+                            <div key={index} className="flex items-center justify-center py-8 border border-gray-800 rounded-xl grayscale hover:grayscale-0 hover:border-[#ff5200] hover:opacity-100 transition-all cursor-pointer">
+                                <span className="text-xl font-black tracking-tighter text-gray-300 group-hover:text-white">{brand}</span>
+                            </div>
+                        ))}
+                    </div>
+                </section>
                 {/* Popular Products Section */}
                 <section className="mb-24">
                     <div className="flex flex-col items-center mb-12">
