@@ -21,5 +21,9 @@ export const auth = betterAuth({
             clientId: process.env.GOOGLE_Client_ID, 
             clientSecret: process.env.GOOGLE_CLIENT_SECRET, 
         },
-      }
+      },account: {
+        accountLinking: {
+            enabled: true,
+        }
+    }
 });

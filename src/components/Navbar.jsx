@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const user = session?.user;
 
-  console.log("Current User:", user);
+  // console.log("Current User:", user);
 
   const handleSignOut=async () =>{
     await authClient.signOut();
