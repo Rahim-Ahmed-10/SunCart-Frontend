@@ -19,11 +19,6 @@ const ProfilePage = () => {
     );
   }
 
-  if (!session?.user) {
-    router.push("/signin");
-    return null;
-  }
-
   const user = session.user;
 
   const handleSignOut=async () =>{
@@ -81,46 +76,6 @@ const ProfilePage = () => {
           </div>
         </div>
       </div>
-
-      {/* 📝 Edit Profile Modal */}
-      {isEditModalOpen && (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center px-4">
-          <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={() => setIsEditModalOpen(false)}></div>
-          <div className="bg-[#0f172a] border border-white/10 w-full max-w-md rounded-3xl p-8 relative shadow-2xl animate-in zoom-in-95 duration-200">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold text-white">Update Profile</h2>
-              <button onClick={() => setIsEditModalOpen(false)} className="text-gray-400 hover:text-white">
-                <FaTimes size={20} />
-              </button>
-            </div>
-
-            <form className="space-y-4">
-              <div>
-                <label className="text-xs font-bold text-gray-500 uppercase ml-1">Display Name</label>
-                <input 
-                  type="text" 
-                  defaultValue={user?.name}
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 mt-1 text-white focus:border-orange-500 outline-none transition-all"
-                />
-              </div>
-              <div>
-                <label className="text-xs font-bold text-gray-500 uppercase ml-1">Profile Image URL</label>
-                <input 
-                  type="text" 
-                  defaultValue={user?.image}
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 mt-1 text-white focus:border-orange-500 outline-none transition-all"
-                />
-              </div>
-              <button 
-                type="submit"
-                className="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold py-4 rounded-xl mt-4 transition-all"
-              >
-                Save Changes
-              </button>
-            </form>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

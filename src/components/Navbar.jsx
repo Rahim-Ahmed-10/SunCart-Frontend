@@ -93,7 +93,7 @@ const Navbar = () => {
             <ul className="flex flex-col p-6 gap-5 text-sm font-semibold uppercase tracking-widest">
               <li><Link href="/" onClick={() => setIsOpen(false)} className="hover:text-orange-500 block">Home</Link></li>
               <li><Link href="/products" onClick={() => setIsOpen(false)} className="hover:text-orange-500 block">Products</Link></li>
-              <li><Link href="/sale" onClick={() => setIsOpen(false)} className="text-orange-500 block">Summer Sale 🔥</Link></li>
+              <li><Link href="/sale" onClick={() => setIsOpen(false)} className="text-orange-500 block">Summer Sale </Link></li>
               <li><Link href="/profile" onClick={() => setIsOpen(false)} className="hover:text-orange-500 block">Profile</Link></li>
               <hr className="border-white/5" />
               <li className="flex flex-col gap-4 pt-2">

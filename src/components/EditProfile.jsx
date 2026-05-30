@@ -46,7 +46,7 @@ export function EditProfile({ user }) {
                             <Modal.Heading className="text-white">Update Profile</Modal.Heading>
                         </Modal.Header>
 
-                        {/* onSubmit ফাংশনটি এখানে যোগ করা হয়েছে */}
+                        {/* onSubmit */}
                         <form onSubmit={onSubmit}>
                             <Modal.Body className="p-6">
                                 <div className="flex flex-col gap-5">
@@ -77,7 +77,7 @@ export function EditProfile({ user }) {
                                 <Button slot="close" variant="secondary" className="hover:bg-white/5 transition-colors">
                                     Cancel
                                 </Button>
-                                {/* Save Changes বাটনটি এখন টাইপ 'submit' হিসেবে কাজ করবে */}
+                                {/* Save Changes */}
                                 <Button type="submit" className="bg-orange-600 hover:bg-orange-500 text-white">
                                     Save Changes
                                 </Button>
