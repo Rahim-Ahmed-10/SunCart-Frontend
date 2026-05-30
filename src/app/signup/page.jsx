@@ -1,5 +1,6 @@
 "use client";
 
+import { authClient } from "@/lib/auth-client";
 import {
   Button,
   Card,
@@ -11,18 +12,48 @@ import {
   TextField,
 } from "@heroui/react";
 import { CheckCheck, RefreshCcw } from "lucide-react";
+import { useRouter } from "next/navigation"; 
+import { FcGoogle } from "react-icons/fc";
 
 export default function SignUpPage() {
+  const router = useRouter();
+
   const onSubmit = async (e) => {
     e.preventDefault();
-    // Form submission logic here
-    const name =e.target.name.value;
-    const image=e.target.image.value;
-    const email=e.target.email.value;
-    const password=e.target.password.value;
+    
+    
+    const name = e.target.name.value;
+    const image = e.target.image.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
 
-    console.log(name, image, email, password)
+    try {
+      const { data, error } = await authClient.signUp.email({
+        name,
+        email,
+        password,
+        image,
+      });
+
+      console.log("Response:", data, error);
+
+      if (!error) {
+       
+        alert("Registration Successful!");
+        router.push("/"); 
+      } else {
+        alert(error.message || "Something went wrong!");
+      }
+    } catch (err) {
+      console.error("Signup error:", err);
+    }
   };
+const handleGoogleLogin = async () => {
+    await authClient.signIn.social({
+      provider: "google",
+      
+    });
+  }
 
   return (
     <div className="bg-[#0f172a] min-h-screen flex items-center justify-center p-6">
@@ -34,7 +65,9 @@ export default function SignUpPage() {
             CREATE <span className="text-[#ff5200]">ACCOUNT</span>
           </h1>
           <div className="h-1 w-16 bg-[#ff5200] mx-auto mt-2"></div>
-          <p className="text-gray-400 mt-4 text-sm uppercase tracking-widest">Join SunCart Essentials</p>
+          <p className="text-gray-400 mt-4 text-sm uppercase tracking-widest">
+            Join SunCart Essentials
+          </p>
         </div>
 
         <Form className="flex flex-col gap-6" onSubmit={onSubmit}>
@@ -121,9 +154,24 @@ export default function SignUpPage() {
               <RefreshCcw size={18} />
             </Button>
           </div>
+           <span className="flex-shrink text-center mx-4 text-gray-600 text-xs uppercase font-bold">OR</span>
+          <Button 
+  variant="bordered"
+  onClick={handleGoogleLogin}
+  className="w-full border-gray-700 text-gray-300 font-bold py-6 rounded-2xl hover:bg-gray-800 transition-all uppercase text-xs"
+>
+  <FcGoogle size={20} />
+  Continue with Google
+</Button>
           
           <p className="text-center text-gray-500 text-sm mt-4">
-            Already have an account? <span className="text-[#ff5200] cursor-pointer hover:underline">Login</span>
+            Already have an account?{" "}
+            <span 
+              className="text-[#ff5200] cursor-pointer hover:underline"
+              onClick={() => router.push("/login")}
+            >
+              Login
+            </span>
           </p>
         </Form>
       </Card>

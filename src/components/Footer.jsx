@@ -12,7 +12,6 @@ import {
 
 const Footer = () => {
   return (
-    // এখানে ব্যাকগ্রাউন্ড কালার পরিবর্তন করে একটি প্রিমিয়াম নেভি-ব্লু শেড দেওয়া হয়েছে
     <footer className="bg-[#0f172a] text-gray-300 pt-16 pb-8 border-t border-white/5">
       <div className="container mx-auto px-6 sm:px-12 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">

@@ -1,14 +1,29 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-// ফুটারের সাথে মিল রেখে React Icons ব্যবহার করা হয়েছে
 import { FaBars, FaTimes } from "react-icons/fa"; 
+import { authClient } from "@/lib/auth-client";
+import { Avatar, Button } from "@heroui/react";
+import { div } from "framer-motion/client";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const { data: session, isPending, error } = authClient.useSession();
+
+ 
+  if (isPending) return <p>Loading...</p>;
+
+  const user = session?.user;
+
+  console.log("Current User:", user);
+
+  const handleSignOut=async () =>{
+    await authClient.signOut();
+  }
+
   return (
-    // ফুটারের ব্যাকগ্রাউন্ড #0f172a এর সাথে মিল রাখা হয়েছে
+   
     <div className="bg-[#0f172a] border-b border-white/5 text-gray-300 sticky top-0 z-[100] shadow-xl">
       <nav className="flex justify-between items-center py-4 max-w-7xl mx-auto px-6 w-full relative">
         
@@ -38,14 +53,28 @@ const Navbar = () => {
         </ul>
 
         {/* Desktop Auth Buttons */}
-        <div className="hidden md:flex gap-6 items-center text-[13px] font-bold uppercase tracking-widest">
-          <Link href="/signup" className="hover:text-white transition-colors">SignUp</Link>
+      <div className="hidden md:flex gap-6 items-center text-[13px] font-bold uppercase tracking-widest">
+         {!user &&  <>
+         <Link href="/signup" className="hover:text-white transition-colors">SignUp</Link>
           <Link 
             href="/signin" 
             className="bg-orange-600 hover:bg-orange-500 text-white px-6 py-2.5 rounded-full shadow-lg shadow-orange-900/20 transition-all duration-300"
           >
             SignIn
           </Link>
+         </>  } {user && (
+         <div className="flex items-center gap-4 border-l border-white/10 pl-6">
+           <Avatar>
+        <Avatar.Image alt={user?.name} src={user?.image} referrerPolicy="no-referrer" />
+        <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+      </Avatar>
+      <Button onClick={handleSignOut} 
+        className="bg-white/5 hover:bg-red-600 hover:text-white text-gray-300 px-4 py-2 rounded-lg border border-white/10 transition-all duration-300"
+      >
+        SignOut
+      </Button>
+         </div>
+         )}
         </div>
 
         {/* Mobile Menu Icon */}
