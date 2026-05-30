@@ -19,6 +19,11 @@ const ProfilePage = () => {
     );
   }
 
+  if (!session) {
+    router.push("/signin"); 
+    return null;
+  }
+
   const user = session.user;
 
   const handleSignOut=async () =>{
