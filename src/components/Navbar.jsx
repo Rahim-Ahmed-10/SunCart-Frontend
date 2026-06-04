@@ -12,7 +12,7 @@ const Navbar = () => {
   const { data: session, isPending, error } = authClient.useSession();
 
  
-  if (isPending) return <p>Loading...</p>;
+  if (isPending) return;
 
   const user = session?.user;
 

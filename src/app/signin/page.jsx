@@ -40,7 +40,7 @@ export default function SignInPage() {
 
       if (error) {
         
-        alert(error.message || "Invalid credentials!");
+        toast.error(error.message || "Invalid credentials!");
       } else {
         
         toast.success("Welcome back!");

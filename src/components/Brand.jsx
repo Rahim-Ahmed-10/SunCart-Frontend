@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Brand = async () => {
     
-    const res = await fetch("http://localhost:3000/Brand.json");
+    const res = await fetch("https://sun-cart-frontend.vercel.app/Brand.json");
     const brands = await res.json();
 
     
