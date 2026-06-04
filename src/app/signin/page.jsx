@@ -13,7 +13,6 @@ import {
 import { useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { BiLogIn } from "react-icons/bi";
-import { GiThunderBlade } from "react-icons/gi";
 import { FcGoogle } from "react-icons/fc";
 
 export default function SignInPage() {

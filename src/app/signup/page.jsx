@@ -35,7 +35,7 @@ export default function SignUpPage() {
         image,
       });
 
-      console.log("Response:", data, error);
+      // console.log("Response:", data, error);
 
       if (!error) {
        
@@ -45,7 +45,7 @@ export default function SignUpPage() {
         alert(error.message || "Something went wrong!");
       }
     } catch (err) {
-      console.error("Signup error:", err);
+      // console.error("Signup error:", err);
     }
   };
 const handleGoogleLogin = async () => {
