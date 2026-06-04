@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Brand = async () => {
     // ডাটা ফেচ করা হচ্ছে
-    const res = await fetch("http://localhost:3000/Brand.json");
+    const res = await fetch("https://sun-cart-frontend.vercel.app/Brand.json");
     const brands = await res.json();
 
     // শুধুমাত্র প্রথম ৪টি ব্র্যান্ড ফিল্টার করে নেওয়া
