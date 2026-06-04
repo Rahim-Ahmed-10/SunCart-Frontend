@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "brand": "SunShade",
+        "logo_text": "SunShade"
+    },
+    {
+        "id": 2,
+        "brand": "GlowGuard",
+        "logo_text": "GlowGuard"
+    },
+    {
+        "id": 3,
+        "brand": "WaveRider",
+        "logo_text": "WaveRider"
+    },
+    {
+        "id": 4,
+        "brand": "AquaFun",
+        "logo_text": "AquaFun"
+    }
+]
