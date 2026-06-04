@@ -1,19 +1,20 @@
 import Brand from '@/components/Brand';
 import ProductsCard from '@/components/ProductsCard';
 import React from 'react';
-import Link from 'next/link'; // এই ইমপোর্টটি জরুরি
+import Link from 'next/link'; 
 
 const AllProductsPage = async ({ searchParams }) => {
-    // URL থেকে ব্র্যান্ড নেওয়া হচ্ছে
-    const { brand } = await searchParams;
+    // সমস্যা সমাধান: searchParams কে আগে await করতে হবে এবং 
+    // যদি কোনো প্যারামিটার না থাকে তবে যেন ক্র্যাশ না করে সেজন্য || {} ব্যবহার করা হয়েছে
+    const params = (await searchParams) || {};
+    const brand = params.brand;
 
-    // মেইন প্রোডাক্ট ডাটা ফেচিং
     const res = await fetch("https://sun-cart-frontend.vercel.app/data.json");
     const allProducts = await res.json();
 
-    // ব্র্যান্ড অনুযায়ী ফিল্টারিং লজিক
+    // ফিল্টারিং লজিক
     const displayedProducts = brand 
-        ? allProducts.filter(p => p.brand.toLowerCase() === brand.toLowerCase())
+        ? allProducts.filter(p => p.brand?.toLowerCase() === brand.toLowerCase())
         : allProducts;
 
     return (
@@ -22,12 +23,11 @@ const AllProductsPage = async ({ searchParams }) => {
                 
                 <section className="mb-24">
                     <div className="flex flex-col items-center mb-12">
-                        <h2 className="text-4xl font-bold italic tracking-wider">
-                            {brand ? brand.toUpperCase() : "ALL"}{" "}
+                        <h2 className="text-4xl font-bold italic tracking-wider uppercase">
+                            {brand ? brand : "ALL"}{" "}
                             <span className="text-[#ff5200]">PRODUCTS</span>
                         </h2>
                         
-                        {/* ব্র্যান্ড সিলেকশন পার্ট */}
                         <div className='mt-10 w-full'>
                             <Brand />
                         </div>
@@ -35,7 +35,6 @@ const AllProductsPage = async ({ searchParams }) => {
                         <div className="h-1 w-20 bg-[#ff5200] mt-8"></div>
                     </div>
 
-                    {/* প্রোডাক্ট লিস্ট */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3">
                         {displayedProducts.length > 0 ? (
                             displayedProducts.map((product) => (

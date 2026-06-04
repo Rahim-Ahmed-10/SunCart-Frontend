@@ -89,27 +89,51 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Dropdown */}
-        {isOpen && (
-          <div className="absolute top-full left-0 w-full bg-[#0f172a] border-b border-white/10 shadow-2xl z-50 md:hidden animate-in fade-in slide-in-from-top-2">
-            <ul className="flex flex-col p-6 gap-5 text-sm font-semibold uppercase tracking-widest">
-              <li><Link href="/" onClick={() => setIsOpen(false)} className="hover:text-orange-500 block">Home</Link></li>
-              <li><Link href="/products" onClick={() => setIsOpen(false)} className="hover:text-orange-500 block">Products</Link></li>
-              <li><Link href="/sale" onClick={() => setIsOpen(false)} className="text-orange-500 block">Summer Sale </Link></li>
-              <li><Link href="/profile" onClick={() => setIsOpen(false)} className="hover:text-orange-500 block">Profile</Link></li>
-              <hr className="border-white/5" />
-              <li className="flex flex-col gap-4 pt-2">
-                <Link href="/signup" onClick={() => setIsOpen(false)} className="text-center py-2">SignUp</Link>
-                <Link 
-                  href="/signin" 
-                  onClick={() => setIsOpen(false)}
-                  className="block bg-orange-600 text-white text-center py-3 rounded-lg font-bold"
-                >
-                  SignIn
-                </Link>
-              </li>
-            </ul>
+{isOpen && (
+  <div className="absolute top-full left-0 w-full bg-[#0f172a] border-b border-white/10 shadow-2xl z-50 md:hidden animate-in fade-in slide-in-from-top-2">
+    <ul className="flex flex-col p-6 gap-5 text-sm font-semibold uppercase tracking-widest">
+      <li><Link href="/" onClick={() => setIsOpen(false)} className="hover:text-orange-500 block">Home</Link></li>
+      <li><Link href="/products" onClick={() => setIsOpen(false)} className="hover:text-orange-500 block">Products</Link></li>
+      <li><Link href="/sale" onClick={() => setIsOpen(false)} className="text-orange-500 block">Summer Sale </Link></li>
+      <li><Link href="/profile" onClick={() => setIsOpen(false)} className="hover:text-orange-500 block">Profile</Link></li>
+      
+      <hr className="border-white/5" />
+
+      <li className="flex flex-col gap-4 pt-2">
+        {/* যদি ইউজার না থাকে তবে এই দুটি দেখাবে */}
+        {!user ? (
+          <>
+            <Link href="/signup" onClick={() => setIsOpen(false)} className="text-center py-2">SignUp</Link>
+            <Link 
+              href="/signin" 
+              onClick={() => setIsOpen(false)}
+              className="block bg-orange-600 text-white text-center py-3 rounded-lg font-bold"
+            >
+              SignIn
+            </Link>
+          </>
+        ) : (
+          /* যদি ইউজার লগইন করা থাকে তবে এই সেকশনটি দেখাবে */
+          <div className="flex flex-col gap-4 items-center">
+             <div className="flex items-center gap-3 self-start">
+                <Avatar size="sm">
+                  <Avatar.Image alt={user?.name} src={user?.image} />
+                  <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+                </Avatar>
+                <span className="text-white normal-case">{user?.name}</span>
+             </div>
+             <Button 
+                onClick={() => { handleSignOut(); setIsOpen(false); }} 
+                className="w-full bg-red-600/10 hover:bg-red-600 text-red-500 hover:text-white py-3 rounded-lg border border-red-600/20 transition-all font-bold"
+             >
+                SignOut
+             </Button>
           </div>
         )}
+      </li>
+    </ul>
+  </div>
+)}
       </nav>
     </div>
   );

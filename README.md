@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛒 SunCart - Modern Summer Shop
 
-## Getting Started
+**SunCart** একটি আধুনিক ই-কমার্স অ্যাপ্লিকেশন যা Next.js 15 ব্যবহার করে তৈরি করা হয়েছে। এখানে ইউজাররা ক্যাটাগরি এবং ব্র্যান্ড অনুযায়ী গ্রীষ্মকালীন পণ্য ফিল্টার করে দেখতে পারেন।
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔗 Project Links
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Live Demo:** [SunCart Live]('https://sun-cart-frontend.vercel.app')  
+* **GitHub Repository:** [SunCart GitHub Repo]('https://github.com/Rahim-Ahmed-10/SunCart-Frontend')
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Key Features (প্রধান বৈশিষ্ট্যসমূহ)
 
-## Learn More
+* **Next.js 15 Power:** আধুনিক অ্যাপ রাউটার এবং সার্ভার সাইড রেন্ডারিং (SSR) ব্যবহার করা হয়েছে।
+* **Smart Filtering:** ক্যাটাগরি, ব্র্যান্ড এবং প্রাইস রেঞ্জ অনুযায়ী পণ্য সহজে খোঁজার সুবিধা।
+* **Better Auth Integration:** নিরাপদ লগইন, সাইন-আপ এবং সেশন ম্যানেজমেন্ট।
+* **Responsive UI:** সব ধরনের ডিভাইসে (মোবাইল, ট্যাবলেট, ডেস্কটপ) নিখুঁতভাবে কাজ করে।
+* **Clean Dark Theme:** চোখের জন্য আরামদায়ক এবং আকর্ষণীয় ডার্ক মোড ডিজাইন।
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack (ব্যবহৃত প্রযুক্তি)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Framework:** Next.js 15 (App Router)
+* **Styling:** Tailwind CSS
+* **Authentication:** Better Auth
+* **Components:** HeroUI (NextUI) & Framer Motion
+* **Icons:** React Icons (IoFilter, FaBars)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👨‍💻 লেখক
+**Md. Rahim Mia** | [GitHub Profile]("https://github.com/Rahim-Ahmed-10")

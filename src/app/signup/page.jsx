@@ -10,6 +10,7 @@ import {
   Input,
   Label,
   TextField,
+  toast,
 } from "@heroui/react";
 import { CheckCheck, RefreshCcw } from "lucide-react";
 import { useRouter } from "next/navigation"; 
@@ -39,10 +40,10 @@ export default function SignUpPage() {
 
       if (!error) {
        
-        alert("Registration Successful!");
+        toast.success("Registration Successful!");
         router.push("/"); 
       } else {
-        alert(error.message || "Something went wrong!");
+        toast.error(error.message || "Something went wrong!");
       }
     } catch (err) {
       // console.error("Signup error:", err);

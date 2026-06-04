@@ -1,5 +1,7 @@
 import React from 'react';
 import ProductsCard from './ProductsCard';
+import FilterButtons from '@/components/FilterButtons';
+
 
 const TopPopular =async () => {
 
@@ -13,7 +15,9 @@ const TopPopular =async () => {
     return (
         <div className="bg-[#0f172a] text-white min-h-screen">
             <div className="max-w-7xl mx-auto px-6 py-16">
-              
+              <div className="mb-8">
+                <FilterButtons />
+              </div>
                 {/* Popular Products Section */}
                 <section className="mb-24">
                     <div className="flex flex-col items-center mb-12">

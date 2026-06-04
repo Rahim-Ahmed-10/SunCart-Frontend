@@ -2,18 +2,15 @@ import React from 'react';
 import Link from 'next/link';
 
 const Brand = async () => {
-    // ডাটা ফেচ করা হচ্ছে
+
     const res = await fetch("https://sun-cart-frontend.vercel.app/Brand.json");
     const brands = await res.json();
 
-    // শুধুমাত্র প্রথম ৪টি ব্র্যান্ড ফিল্টার করে নেওয়া
+    
     const filteredBrands = brands.slice(0, 4);
 
     return (
         <section className='w-full'>
-            <h2 className="text-2xl font-bold text-center text-gray-400 uppercase tracking-[0.3em] mb-10">
-                Top Partners
-            </h2>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
                 {filteredBrands.map((brandItem) => (
